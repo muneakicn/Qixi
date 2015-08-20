@@ -16,7 +16,7 @@
         <center>
 <canvas id="heart" width="400" height="400"></canvas>
 </center>
-           <p>璇璇七夕快乐！！</p><p style="text-align:center;">I Love You!</p></div>
+           <p style="text-align:center;">璇璇七夕快乐!</p><p style="text-align:center;">I Love You !</p></div>
         <audio preload="auto" id="music">
             <source src="music.mp3" type="audio/mpeg" />
         </audio>
@@ -94,7 +94,7 @@
                     { point: "39.6, -3.3", text: "Te amo" },
                     { point: "42.9, 13.9", text: "Ti amo" },
                     { point: "61.5, 88.6", text: "Я люблю тебя" },
-                    { point: "36.6, 138.9", text: "私はあなたを愛して" },
+                    { point: "36.6, 138.9", text: "愛してる" },
                     { point: "36.9, 127.6", text: "난 널 사랑해" },
                     { point: "30.6, 114.3", text: "我爱你" },
                     { point: "30.6, 114.3", text: "我爱你" }
@@ -136,7 +136,7 @@
                 $.each(photos, function(i, photo){
                     var point = photo.point.split(",");
                     var infowindow = new google.maps.InfoWindow({
-                        content: "<img src='" + photo.src + "' style='width:400px;height:300px;' />",
+                        content: "<img src='" + photo.src + "' style='width:300px;height:400px;' />",
                         position: new google.maps.LatLng(point[0], point[1])
                     });
                     infowindows.push(infowindow);
